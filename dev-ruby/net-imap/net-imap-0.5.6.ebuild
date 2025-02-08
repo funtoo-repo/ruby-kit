@@ -11,7 +11,7 @@ inherit ruby-fakegem
 
 DESCRIPTION="Ruby client api for Internet Message Access Protocol"
 HOMEPAGE="https://github.com/ruby/net-imap"
-SRC_URI="https://github.com/ruby/net-imap/tarball/e4ef3eb724fe7eb036aef38b962d58b7b91cb3e6 -> net-imap-0.5.5-e4ef3eb.tar.gz"
+SRC_URI="https://github.com/ruby/net-imap/tarball/62710b905d5672dc3dcc6d6774c1863a46e4be2b -> net-imap-0.5.6-62710b9.tar.gz"
 
 KEYWORDS="*"
 LICENSE="|| ( Ruby BSD-2 )"
