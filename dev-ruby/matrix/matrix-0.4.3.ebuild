@@ -9,9 +9,9 @@ RUBY_FAKEGEM_GEMSPEC="${PN}.gemspec"
 
 inherit ruby-fakegem
 
-DESCRIPTION="Ruby client api for Internet Message Access Protocol"
-HOMEPAGE="https://github.com/ruby/net-imap"
-SRC_URI="https://github.com/ruby/net-imap/tarball/f76d433f73c1b0ac67dc831357cbf267174f54cb -> net-imap-0.5.8-f76d433.tar.gz"
+DESCRIPTION="An implementation of Matrix and Vector classes"
+HOMEPAGE="https://github.com/ruby/matrix"
+SRC_URI="https://github.com/ruby/matrix/tarball/de06454b6c80e83b98890d433b64422ce9bd49a9 -> matrix-0.4.3-de06454.tar.gz"
 
 KEYWORDS="*"
 LICENSE="|| ( Ruby BSD-2 )"
@@ -22,13 +22,11 @@ ruby_add_bdepend "test? ( dev-ruby/test-unit )"
 
 post_src_unpack() {
 	if [ ! -d "${S}/all/${P}" ] ; then
-		mv "${WORKDIR}"/all/ruby-net-imap-* "${S}"/all/"${P}" || die
+		mv "${WORKDIR}"/all/ruby-matrix-* "${S}"/all/"${P}" || die
 	fi
 }
 
 all_ruby_prepare() {
-	sed -e 's/__dir__/"."/' \
-		-e 's/__FILE__/"'${RUBY_FAKEGEM_GEMSPEC}'"/' \
-		-e 's/git ls-files -z/find * -print0/' \
+	sed -e 's:require_relative ":require "./:' \
 		-i ${RUBY_FAKEGEM_GEMSPEC} || die
 }

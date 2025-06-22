@@ -9,9 +9,9 @@ RUBY_FAKEGEM_GEMSPEC="${PN}.gemspec"
 
 inherit ruby-fakegem
 
-DESCRIPTION="Prime numbers and factorization library."
-HOMEPAGE="https://github.com/ruby/prime"
-SRC_URI="https://github.com/ruby/prime/tarball/a5546263bebeb465adaeb6fabda9d8ad447e076f -> prime-0.1.3-a554626.tar.gz"
+DESCRIPTION="Ruby client api for Internet Message Access Protocol"
+HOMEPAGE="https://github.com/ruby/net-imap"
+SRC_URI="https://github.com/ruby/net-imap/tarball/0f8c37a1fd0404fcdec1bdddcf25835fd3f88621 -> net-imap-0.5.9-0f8c37a.tar.gz"
 
 KEYWORDS="*"
 LICENSE="|| ( Ruby BSD-2 )"
@@ -22,11 +22,13 @@ ruby_add_bdepend "test? ( dev-ruby/test-unit )"
 
 post_src_unpack() {
 	if [ ! -d "${S}/all/${P}" ] ; then
-		mv "${WORKDIR}"/all/ruby-prime-* "${S}"/all/"${P}" || die
+		mv "${WORKDIR}"/all/ruby-net-imap-* "${S}"/all/"${P}" || die
 	fi
 }
 
 all_ruby_prepare() {
-	sed -e 's:require_relative ":require "./:' \
+	sed -e 's/__dir__/"."/' \
+		-e 's/__FILE__/"'${RUBY_FAKEGEM_GEMSPEC}'"/' \
+		-e 's/git ls-files -z/find * -print0/' \
 		-i ${RUBY_FAKEGEM_GEMSPEC} || die
 }
