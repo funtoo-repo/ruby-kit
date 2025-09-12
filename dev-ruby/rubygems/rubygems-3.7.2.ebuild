@@ -8,7 +8,7 @@ inherit ruby-ng prefix
 
 DESCRIPTION="Library packaging and distribution for Ruby."
 HOMEPAGE="https://rubygems.org/ https://github.com/rubygems/rubygems"
-SRC_URI="https://github.com/rubygems/rubygems/tarball/bd22001d8c73202aec2425ca4e32a7dab3728c07 -> rubygems-3.7.1-bd22001.tar.gz"
+SRC_URI="https://github.com/rubygems/rubygems/tarball/b463ced1459e03bf871116fff3a09c5d287806c2 -> rubygems-3.7.2-b463ced.tar.gz"
 
 KEYWORDS="*"
 LICENSE="GPL-2 || ( Ruby MIT )"
