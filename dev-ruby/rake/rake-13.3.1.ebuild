@@ -13,7 +13,7 @@ inherit ruby-fakegem
 
 DESCRIPTION="A make-like build utility for Ruby."
 HOMEPAGE="https://github.com/ruby/rake"
-SRC_URI="https://github.com/ruby/rake/tarball/0fdacef47aa9a4140e472b0ce302a2dd09423a75 -> rake-13.3.0-0fdacef.tar.gz"
+SRC_URI="https://github.com/ruby/rake/tarball/f0001c3eeada8220f2976170876c75d21ed0626f -> rake-13.3.1-f0001c3.tar.gz"
 
 KEYWORDS="*"
 LICENSE="MIT"
