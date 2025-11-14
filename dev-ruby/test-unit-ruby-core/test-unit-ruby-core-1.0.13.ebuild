@@ -9,7 +9,7 @@ inherit ruby-fakegem
 
 DESCRIPTION="Additional test assertions for Ruby standard libraries"
 HOMEPAGE="https://github.com/ruby/test-unit-ruby-core"
-SRC_URI="https://github.com/ruby/test-unit-ruby-core/tarball/64837e6f0d404c7f9ec3a975d9abf141be7db903 -> test-unit-ruby-core-1.0.10-64837e6.tar.gz"
+SRC_URI="https://github.com/ruby/test-unit-ruby-core/tarball/9e74ba846449ad2bcc03867095a49762f34de697 -> test-unit-ruby-core-1.0.13-9e74ba8.tar.gz"
 
 KEYWORDS="*"
 LICENSE="|| ( Ruby GPL-2 ) PSF-2"
