@@ -11,7 +11,7 @@ inherit ruby-fakegem
 
 DESCRIPTION='Pseudo `IO` class from/to `String`.'
 HOMEPAGE="https://github.com/ruby/stringio"
-SRC_URI="https://github.com/ruby/stringio/tarball/2d63b5e776273a24b7479cd2297ac3106a329191 -> stringio-3.1.8-2d63b5e.tar.gz"
+SRC_URI="https://github.com/ruby/stringio/tarball/5f9b937b2fd201b24aed3e09362d40e19c980d8f -> stringio-3.1.9-5f9b937.tar.gz"
 
 KEYWORDS="*"
 LICENSE="BSD-2"

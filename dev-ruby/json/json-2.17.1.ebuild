@@ -12,7 +12,7 @@ inherit ruby-fakegem
 
 DESCRIPTION="A JSON implementation as a Ruby extension"
 HOMEPAGE="https://github.com/ruby/json"
-SRC_URI="https://github.com/ruby/json/tarball/5a12067f8878d94739d70e0085b91c88fd9e31d6 -> json-2.16.0-5a12067.tar.gz"
+SRC_URI="https://github.com/ruby/json/tarball/e5e4fd558e5a8d53db63eeaeca9212e8f0042e19 -> json-2.17.1-e5e4fd5.tar.gz"
 
 KEYWORDS="*"
 LICENSE="Ruby"
